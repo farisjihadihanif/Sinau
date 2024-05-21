@@ -1,0 +1,104 @@
+macam-macam tipe data:
+
+Tipe Data Primitif
+
+Tipe data primitif merupakan jenis paling dasar dalam pemrograman. Tipe data ini menyimpan single value. Berikut adalah berbagai tipe data primitif.
+
+
+Numbers
+
+Integer
+
+Bilangan bulat positif atau negatif dan tidak memiliki angka desimal.
+Contoh: 1; -20; 999; dan 0.
+
+Float
+
+Bilangan riil yang dapat mewakili bilangan bulat atau bilangan desimal.
+
+Contoh: 3.14; 1; dan 4.01E+1
+
+Complex
+
+Bilangan kompleks. (Kita tidak akan menggunakannya di kelas ini.)
+
+Contoh: 1+2j
+
+Tipe data primitif pertama, yakni numbers adalah tipe data angka berupa bilangan bulat, riil, dan kompleks.
+
+Tipe data integer merupakan bilangan bulat positif atau negatif dan tidak memiliki angka desimal. Selanjutnya, tipe data float merupakan bilangan riil yang mewakili bilangan bulat dan angka desimal. Terakhir, tipe data complex yang merupakan representasi dari bilangan kompleks dalam matematika. Tipe data complex terdiri dari bilangan riil dan imajiner dengan bentuk “x +yj”, yaitu “x” adalah bilangan riil dan “y” adalah bilangan imajiner. 
+
+Ciri dari bilangan numbers adalah Anda dapat mengoperasikan bilangan tersebut dengan operasi matematika sederhana, seperti pertambahan (+), pengurangan (-), perkalian (*), dan operasi matematika lainnya.
+.
+.
+.
+List:
+List merupakan jenis kumpulan data terurut (ordered sequence) dan salah satu tipe data yang sering digunakan pada Python. List dalam Python ini serupa, tetapi tak sama dengan array pada bahasa pemrograman lainnya. List Python tidak mengharuskan memiliki tipe data yang sama di dalamnya, sedangkan array sebaliknya. Pake "[]"
+.
+.
+.
+Adapun konsep slicing merujuk pada pengambilan data berdasarkan indeks dari rentang tertentu. Slicing pada Python mengikuti pola sebagai berikut.
+
+sequence[start:stop:step]
+
+Start merupakan indeks pertama yang Anda ambil. Stop merupakan indeks terakhir yang ingin Anda ambil. Step merupakan jumlah elemen yang ingin Anda lewati di antara setiap elemen slice. Secara default, nilai step adalah 1.
+
+Hal penting yang harus Anda ingat adalah nilai start bersifat inklusif sedangkan stop bersifat eksklusif. Masih ingat dengan konsep tersebut dalam matematika? Konsep ini menggambarkan batas tertentu dalam suatu interval. Jika suatu interval dikatakan inklusif, batas terakhir yang telah ditentukan akan dianggap sebagai bagian dari interval. 
+Namun, jika suatu interval dikatakan eksklusif, batas terakhir yang telah ditentukan tidak akan dianggap sebagai bagian dari interval.
+.
+.
+.
+Tuple:
+Tuple adalah jenis dari list yang tidak dapat diubah elemennya. Umumnya, tuple digunakan untuk data yang bersifat sekali deklarasi dan dapat dieksekusi lebih cepat. Tuple didefinisikan dengan kurung “()“ dan setiap elemen di dalamnya dipisahkan dengan koma.
+.
+.
+.
+Set:
+Set adalah kumpulan item bersifat unik, tanpa urutan (unordered collection), dan dapat diinisialisasikan dengan kurawal “{}” di mana setiap elemennya dipisahkan dengan koma.
+
+Tidak sama seperti list, dalam set kita tidak bisa melakukan indeksing karena set tidak memiliki indeks. Hal ini merujuk pada definisi nya yang menyatakan bahwa set merupakan kumpulan item tanpa urutan. Perhatikan kode di bawah ini.
+Selain tanpa urutan (unordered collection). Set juga bersifat unik, artinya, data yang Anda simpan pada set tidak akan ada duplikat. Anda dapat memanfaatkan hal ini untuk menghilangkan duplikat pada suatu data.
+Terakhir, set adalah himpunan dalam matematika. Ini maknanya Anda dapat melakukan operasi union (gabungan) dan intersection (irisan) pada set. Python menyediakan method “.union()” dan “.intersection()” untuk tipe data set.
+Method merupakan tindakan atau operasi yang dapat dilakukan oleh suatu objek. Saat ini, tidak apa-apa jika kamu belum memahami sepenuhnya. Anda akan mempelajari lebih detail mengenai method pada modul Object-Oriented Programming (OOP). 
+.
+.
+.
+Dictionary
+Dictionary pada Python merupakan kumpulan pasangan key-value yang bersifat tidak berurutan. Dictionary dapat digunakan untuk menyimpan data kecil hingga besar. Pada Python, dictionary didefinisikan dengan kurawal "{}" dan tambahan definisi berikut.
+
+1. Setiap elemen pasangan key-value dipisahkan dengan koma (,).
+2. Key dan value dipisahkan dengan titik dua (:).
+3. Key dan value dapat berupa tipe variabel/objek apa pun.
+.
+.
+.
+Konversi antara Tipe Data
+Setelah mengetahui berbagai tipe data pada Python, Anda pun dapat melakukan konversi antar tipe data dengan menggunakan beberapa fungsi.
+
+Fungsi merupakan blok kode yang dapat dipanggil untuk melakukan tugas tertentu. Anda akan mempelajari fungsi lebih detail pada modul subprogram. Saat ini, Anda cukup memahami bahwa fungsi di bawah ini dapat melakukan operasi terhadap list, set, dan string.
+.
+.
+.
+Untuk melakukan konversi dari integer ke float cukup menggunakan fungsi float() dengan memasukkan nilai integer di dalamnya.
+.
+.
+.
+Untuk melakukan konversi dari float ke integer cukup menggunakan fungsi int() dengan memasukkan nilai float di dalamnya.
+.
+.
+.
+Jika ingin melakukan konversi ke string, Anda cukup menggunakan fungsi str().
+.
+.
+.
+Konversi kumpulan Data
+Untuk melakukan konversi kumpulan data dari-dan-ke set/list/tuple, Anda cukup menggunakan fungsi dari tipe data yang diinginkan. Misalnya, set(), tuple(), dan list().
+.
+.
+.
+Konversi ke Dictionary
+Untuk konversi ke dictionary, data harus memenuhi persyaratan key-value. Selain itu, Anda bisa melakukan konversi ke dictionary menggunakan fungsi dict(). 
+
+List dari beberapa list yang isinya pasangan nilai menjadi dictionary.
+
+

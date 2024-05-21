@@ -1,0 +1,742 @@
+Pengertian Ekspresi
+Phew, setelah melewati pembahasan tipe data yang sangat komprehensif, Anda memiliki bekal cukup untuk membuat program dan belajar pada modul-modul berikutnya. 
+
+Salah satunya adalah materi ekspresi kali ini. Data yang Anda simpan pada suatu variabel umumnya akan dioperasikan untuk menghasilkan suatu nilai sesuai keinginan. Masih ingat ekspresi pada matematika? Ekspresi pada matematika adalah kombinasi dari simbol-simbol matematika, seperti angka, variabel, operasi matematika, dan sebagainya. Contohnya seperti pada gambar berikut.
+
+dos:a6e426ba67b8d475da61f244c85004a420230727181406.jpeg
+
+Pada gambar di atas, "4x-7" merupakan ekspresi, sedangkan "4x", "7", dan "5" merupakan suku bilangan. Apabila kita mengingat kembali, operasi pada matematika ataupun pemrograman merupakan suatu proses yang dilakukan untuk mendapatkan hasil nilai tertentu.
+
+Lalu, apa itu ekspresi dalam pemrograman? Ekspresi pada pemrograman merupakan kombinasi dari satu atau lebih variabel, konstanta, operator, dan fungsi yang bermakna untuk menghasilkan suatu nilai dalam suatu tipe tertentu.
+
+Struktur umum ekspresi yang sering dijumpai adalah <operan1> <operator> <operan2>. Namun, perlu Anda ketahui bahwa struktur umum tersebut merupakan struktur ekspresi biner (jenis ekspresi menggunakan dua operan). Mari bedah struktur tersebut lebih dalam.
+
+Operan dapat berupa nilai, variabel, konstanta, atau ekspresi lain.
+Operator merupakan suatu fungsi standar yang disediakan dalam bahasa pemrograman untuk melakukan beberapa hal dasar, seperti perhitungan aritmetika, logika, dan relasional. Contohnya adalah penjumlahan (+), pengurangan (-), perkalian (*), modulus (%), dan sebagainya.
+Di bawah ini, penerapan ekspresi pada Python.
+
+main.py
+1
+x = 10
+2
+y = 2
+3
+result = x - y
+4
+​
+5
+print(result)
+6
+​
+7
+"""
+8
+Output:
+9
+8
+10
+"""
+           
+Lantas, mengapa kita harus paham terlebih dahulu mengenai ekspresi? Sebab, ini merupakan dasar dalam pemrograman untuk melakukan semua perhitungan dan manipulasi data. 
+
+Salah satunya adalah melakukan penggabungan dan replikasi pada list.
+
+main.py
+1
+angka = [2, 4, 6, 8]
+2
+huruf = ['P', 'Y', 'T', 'H', 'O', 'N']
+3
+gabung = angka + huruf
+4
+​
+5
+print(gabung)
+6
+​
+7
+"""
+8
+Output:
+9
+[2, 4, 6, 8, 'P', 'Y', 'T', 'H', 'O', 'N']
+10
+"""
+        
+Pada kode di atas, Anda menggabungkan dua list dengan menggunakan operator penjumlahan (+). Namun, pada kode di bawah ini, Anda mereplikasi list dengan menggunakan operator perkalian (*).
+
+main.py
+1
+learn = ['P', 'Y', 'T', 'H', 'O', 'N']
+2
+replikasi = learn * 2
+3
+​
+4
+print(replikasi)
+5
+​
+6
+"""
+7
+Output:
+8
+['P', 'Y', 'T', 'H', 'O', 'N', 'P', 'Y', 'T', 'H', 'O', 'N']
+9
+"""
+            
+Pada kedua kode di atas, Anda telah melakukan operasi replikasi dan duplikasi pada list menggunakan ekspresi. Sekarang, mari kita pelajari lebih dalam mengenai berbagai jenis ekspresi.
+.
+.
+.
+.
+Jenis-Jenis Ekspresi
+Pada dasarnya, jenis-jenis ekspresi dibagi menjadi dua. Pertama adalah menurut jumlah operan (arity) dari operator dan kedua adalah menurut tipe data yang dihasilkan.
+
+
+
+Ekspresi Menurut Arity dari Operator
+Jenis	Contoh
+Biner
+
+(x + y), (x - y), (x * y), (x / y), (x ** y), (x < y), (x <= y), (x > y), (x >= y), (x % y), (x == y), (x != y).
+
+Uner
+
+(x += 1), (x-=1), (not x).
+
+Ekspresi biner merupakan jenis yang memiliki dua operan. Operatornya meliputi penjumlahan (+), pengurangan (-), perkalian (*), pembagian (/), perpangkatan (**), lebih kecil dari (<), lebih kecil dari sama dengan (<=), lebih besar dari (>), lebih besar dari sama dengan (>=), modulus (%), sama dengan (==), dan tidak sama dengan (!=).
+
+Namun, ekspresi uner adalah jenis ekspresi yang memiliki bentuk dasar operasi dengan satu operan. Contohnya adalah increment (x+=1), decrement (x-=1), dan negasi (not x).
+
+Anda sudah melihat penerapan ekspresi biner pada submodul sebelumnya dan berikut adalah penerapan ekspresi uner.
+
+main.py
+1
+a = True
+2
+a = not a
+3
+print(a)
+4
+​
+5
+b = 6
+6
+b -= 1
+7
+print(b)
+8
+​
+9
+c = 6
+10
+c += 1
+11
+print(c)
+12
+​
+13
+d = 10
+14
+print(-d)
+15
+​
+16
+"""
+17
+Output:
+18
+False
+19
+5
+20
+7
+          
+Mari kita bedah satu persatu kode di atas.
+
+Variabel a bernilai True, jika kita memberikan ekspresi "not a" yang artinya "not True", hasil yang didapat adalah False. 
+Baik increment maupun decrement, keduanya adalah pola yang sama untuk menambahkan dan mengurangi suatu variabel dengan jumlah tetap.
+a += 1 memiliki tujuan yang sama dengan struktur a = a + 1. Jika diasumsikan variabel a bernilai 1, seolah-olah kita melakukan operasi penjumlahan "1+1". Inilah alasan ia disebut dengan increment yang artinya kenaikan.
+Decrement dapat dijelaskan sebagai a -=1, memiliki tujuan yang sama dengan struktur a = a - 1. Jika diasumsikan variabel a bernilai 1, seolah-olah kita melakukan operasi pengurangan "1-1".
+Penjelasan lebih detail mengenai operator akan kita bahas pada materi selanjutnya. Saat ini mari kita lanjut membahas ekspresi menurut tipe data yang dihasilkan.
+
+
+
+Ekspresi Menurut Tipe Data yang Dihasilkan
+Jenis	Contoh
+Ekspresi aritmetika: 
+
+<numerik> <operator> <numerik> = <numerik>
+
+2 + 2 = 4, 2 - 2 = 0
+
+Ekspresi relasional: 
+
+<numerik> <operator> <numerik> = <boolean>
+
+3 < 10 = True, 1 > 10 = False
+
+Ekspresi logika: 
+
+<boolean> <operator> <boolean> = <boolean>
+
+True or False = True
+
+Sebagaimana judulnya, jenis-jenis ini adalah ekspresi yang dikelompokkan berdasarkan tipe data yang dihasilkan. Mari kita bedah satu per satu.
+
+Ekspresi aritmetika: jenis ekspresi yang memiliki operan bertipe numerik dan menghasilkan numerik.
+Ekspresi relasional: jenis ekspresi yang memiliki operan bertipe numerik dan menghasilkan nilai boolean/logika.
+Ekspresi logika: jenis ekspresi yang memiliki operan bertipe boolean/logika dan menghasilkan nilai boolean/logika.
+main.py
+1
+print(2+2)
+2
+print(3<10)
+3
+print(True or False)
+4
+​
+5
+"""
+6
+Output:
+7
+4
+8
+True
+9
+True
+10
+"""
+          
+Pada kode di atas, kita melakukan operasi dengan melibatkan ekspresi aritmetika, ekspresi relasional, dan ekspresi logika. Pada ekspresi aritmetika, "2+2" menghasilkan nilai "4". Pada ekspresi relasional, "3<10" menghasilkan nilai True; tentu kita tahu bahwa tiga termasuk bilangan yang kurang dari sepuluh. Pada ekspresi logika "True or False" menghasilkan nilai True, ini merupakan gerbang logika pada dunia pemrograman. Anda akan mempelajari lebih detail pada materi operator logika.
+.
+.
+.
+.
+Jenis-Jenis Operator
+Selain ekspresi dengan beragam jenis, operator pun memiliki berbagai jenis yang dikelompokkan menjadi operator aritmetika, operator relational, operator logika, dan operator assignment.
+
+
+
+Operator Aritmetika
+Jenis pertama adalah operator untuk melakukan operasi aritmetika. Perhatikan tabel di bawah ini untuk memahami contoh penerapan operator aritmetika. Asumsikan x bernilai 11 dan y bernilai 5. 
+
+Operator	Deskripsi	Contoh
+Penjumlahan (+)
+
+Menambahkan nilai dari kedua operan.
+
+x + y = 16
+
+Pengurangan (-)
+
+Mengurangi nilai dari kedua operan.
+
+x - y = 6
+
+Perkalian (*)
+
+Mengalikan nilai dari kedua operan.
+
+x * y = 55
+
+Pembagian Bulat (//)
+
+Membagi nilai dari kedua operan. Jika operan adalah integer, hasil operasi adalah bilangan bulat.
+
+x // y = 2
+
+Pembagian Riil (/)
+
+Membagi nilai dari kedua operan. Jika operan adalah float, hasil operasi adalah bilangan riil.
+
+x / y = 2.2
+
+Modulo (%)
+
+Sisa hasil pembagian nilai dari dua operan.
+
+x % y = 1
+
+Pangkat (**)
+
+Memangkatkan nilai dari dua operan.
+
+x ** y = 161051
+
+Semua operator aritmetika di atas adalah jenis untuk melakukan operasi aritmetika yang sering dijumpai. Mari lihat penerapannya pada Python.
+
+main.py
+1
+x = 11
+2
+y = 5
+3
+​
+4
+print(x + y)
+5
+print(x - y)
+6
+print(x * y)
+7
+print(x // y)
+8
+print(x / y)
+9
+print(x % y)
+10
+print(x ** y)
+11
+​
+12
+"""
+13
+Output:
+14
+​
+15
+16
+16
+6
+17
+55
+18
+2
+19
+2.2
+20
+1
+           
+Pada kode di atas, Anda telah menerapkan seluruh operasi menggunakan operator aritmetika. Jika kita lihat lebih detail, seluruh output tersebut memiliki hasil yang sama dengan tabel sebelumnya.
+
+
+
+Operator Relasional
+Operator relasional merupakan operator perbandingan antara dua operan yang berupa integer, float, string, ataupun boolean. Hasil akhir dari operator ini adalah nilai bertipe boolean. Perhatikan tabel di bawah untuk memahami contoh penerapan operator relasional. Asumsikan kedua variabel bertipe numerik atau float dengan x bernilai 5 dan y bernilai 10. 
+
+Operator	Deskripsi	Contoh
+Sama dengan (==)
+
+Menghasilkan True, jika kedua operan bernilai sama.
+
+x == y, menghasilkan False. 
+
+Tidak Sama dengan (!=)
+
+Menghasilkan True, jika kedua operan tidak bernilai sama.
+
+x != y, menghasilkan True.
+
+Lebih Besar dari (>)
+
+Menghasilkan True, jika operan kiri lebih besar dari operan kanan.
+
+x > y, menghasilkan False.
+
+Kurang dari (<)
+
+Menghasilkan True, jika operan kanan lebih besar dari operan kiri.
+
+x < y, menghasilkan True.
+
+Lebih Besar dari Sama dengan (>=)
+
+Menghasilkan True, jika operan kiri lebih besar atau sama dengan operan kanan.
+
+x >= y, menghasilkan False.
+
+Kurang dari Sama dengan (<=)
+
+Menghasilkan True, jika operan kanan lebih besar atau sama dengan operan kiri.
+
+x <= y, menghasilkan True.
+
+Pada dasarnya, ini adalah operator yang membandingkan dua nilai dengan hasil akhir bertipe boolean. Mari lihat penerapannya pada Python.
+
+main.py
+1
+x = 5
+2
+y = 10
+3
+​
+4
+print(x == y)
+5
+print(x != y)
+6
+print(x > y)
+7
+print(x < y)
+8
+print(x >= y)
+9
+print(x <= y)
+10
+​
+11
+"""
+12
+Output:
+13
+​
+14
+False
+15
+True
+16
+False
+17
+True
+18
+False
+19
+True
+20
+"""
+           
+Pada kode di atas, Anda telah menerapkan seluruh operasi menggunakan operator relasional. Jika kita lihat lebih detail, seluruh output tersebut memiliki hasil yang sama dengan tabel sebelumnya. Sebagaimana telah dijelaskan sebelumnya, operator relasional dapat menggunakan operan bertipe integer, string, ataupun float. Kode di atas telah menggunakan operan bertipe integer, Anda juga bisa mengubahnya dengan operan bertipe float. 
+
+Namun, berbeda halnya dengan operan bertipe string. Anda dapat melihat tabel di bawah untuk contoh penerapannya. Asumsikan x bernilai "Dicoding" dan y bernilai "Indonesia".
+
+Operator	Deskripsi	Contoh
+Sama dengan (==)
+
+Menghasilkan True, jika kedua string memiliki nilai yang identik/sama persis.
+
+x == y, menghasilkan False.
+
+Tidak Sama dengan (!=)
+
+Menghasilkan True, jika kedua string memiliki nilai yang tidak sama.
+
+x != y, menghasilkan True.
+
+Lebih Besar dari (>)
+
+Menghasilkan True, jika huruf pertama pada string pertama memiliki nilai unicode dengan urutan yang lebih tinggi dibandingkan huruf pertama pada string kedua. 
+
+x > y, menghasilkan False.
+
+Kurang dari (<)
+
+Menghasilkan True, jika huruf pertama pada string pertama memiliki nilai unicode dengan urutan yang lebih rendah dibandingkan huruf pertama pada string kedua.
+
+x < y, menghasilkan True.
+
+Lebih Besar dari Sama dengan (>=)
+
+Menghasilkan True, jika huruf pertama pada string pertama memiliki nilai unicode dengan urutan yang lebih tinggi atau sama dibandingkan huruf pertama pada string kedua.
+
+x >= y, menghasilkan False.
+
+Kurang dari Sama dengan (<=)
+
+Menghasilkan True, jika huruf pertama pada string pertama memiliki nilai unicode dengan urutan yang lebih rendah atau sama dibandingkan huruf pertama pada string kedua.
+
+x <= y, menghasilkan True.
+
+Catatan: Nilai unicode adalah standar internasional yang menetapkan kode numerik untuk setiap karakter dari hampir semua sistem tulisan dan simbol-simbol yang digunakan oleh manusia.
+
+Mari lihat implementasinya pada contoh kode di bawah ini.  
+
+main.py
+1
+x = "Dicoding"
+2
+y = "Indonesia"
+3
+​
+4
+print(x == y)
+5
+print(x != y)
+6
+print(x > y)
+7
+print(x < y)
+8
+print(x >= y)
+9
+print(x <= y)
+10
+​
+11
+"""
+12
+Output:
+13
+​
+14
+False
+15
+True
+16
+False
+17
+True
+18
+False
+19
+True
+20
+"""
+
+Perhatikan kode di atas, string "Dicoding" dan "Indonesia" tidak sama sehingga sintaks operator sama dengan "==" menghasilkan nilai False, sedangkan operator tidak sama dengan "!=" menghasilkan nilai True. Operator sisanya akan membandingkan huruf D pada string "Dicoding" dan huruf I pada string "Indonesia". Anda bisa mencoba mengganti huruf pertama tersebut untuk memahami lebih detail.
+
+Operator Logika
+Operator logika merupakan jenis operator untuk melakukan operasi logika dengan kedua operannya bertipe boolean. Hasil akhir dari operasi ini adalah nilai bertipe boolean. Perhatikan kode di bawah ini untuk memahami contoh penerapannya, asumsikan bahwa p bernilai True dan q bernilai False.
+
+Operator	Deskripsi	Contoh
+"AND" atau "&"
+
+Logika yang hanya menghasilkan True jika kedua operan bernilai True.
+
+p and q = False, p & q = False
+
+"OR" atau "|"
+
+Logika yang menghasilkan True jika salah satu dari kedua operan bernilai True.
+
+p or q = True, p | q = True
+
+NOT
+
+Logika yang bertujuan untuk membalikkan nilai logika dari operannya.
+
+not q = True
+
+Jenis operator ini membandingkan dua operan bertipe boolean. Perhatikan gambar ini untuk memahaminya lebih dalam.
+
+dos:559e28c4cf3b9c694a2c0122a88ca1b620230728090557.jpeg
+
+Operator AND hanya akan menghasilkan nilai True jika kedua operannya bernilai True. Operator OR akan menghasilkan nilai True jika salah satunya bernilai True. Operator NOT hanya akan membalikkan nilai logika; jika True, False yang akan dikembalikan, begitupun sebaliknya.  
+
+Mari kita bedah satu per satu jenis operator di atas.
+
+
+
+Operator AND
+dos:a4e7715072de241440547eb483c7d4e620230728090557.jpeg
+
+Pada tabel di atas, operator AND hanya akan menghasilkan nilai TRUE jika kedua operan, yakni P dan Q bernilai TRUE. Sisanya akan menghasilkan nilai FALSE. Mari lihat penerapannya pada Python.
+
+main.py
+1
+print(True and True)
+2
+print(True and False)
+3
+print(False and True)
+4
+print(False and False)
+5
+​
+6
+​
+7
+"""
+8
+Output:
+9
+​
+10
+True
+11
+False
+12
+False
+13
+False
+14
+"""
+            
+Pada kode di atas, Anda menerapkan seluruh contoh yang ada pada tabel sebelumnya menjadi program Python. Dapat dilihat bahwa hanya jika kedua operan bernilai True yang menghasilkan nilai True.
+
+
+
+Operator OR
+dos:65391a944424685ffa4b11fb5fda1aa320230728090557.jpeg
+
+Pada tabel di atas, operator OR akan menghasilkan nilai TRUE jika salah satu atau kedua operan (yakni P atau Q) bernilai True. Mari lihat penerapannya pada Python.
+
+
+
+main.py
+1
+print(True or True)
+2
+print(True or False)
+3
+print(False or True)
+4
+print(False or False)
+5
+​
+6
+​
+7
+"""
+8
+Output:
+9
+​
+10
+True
+11
+True
+12
+True
+13
+False
+14
+"""
+            
+Pada kode di atas, Anda menerapkan seluruh contoh yang ada pada tabel sebelumnya menjadi program Python. Dapat dilihat bahwa jika salah satu atau kedua operan bernilai True, hasil akhirnya bernilai True.
+
+
+
+Operator NOT
+dos:7098dc791e8ae1734bf7094c8104be7620230728090556.jpeg
+
+Pada tabel di atas, operator NOT akan membalikkan nilai boolean dari operan aslinya atau disebut sebagai negasi. Mari lihat penerapannya pada Python.
+
+main.py
+1
+print(not True)
+2
+print(not False)
+3
+​
+4
+"""
+5
+Output:
+6
+​
+7
+False
+8
+True
+9
+"""
+           
+Pada kode di atas, Anda menerapkan seluruh contoh yang ada pada tabel sebelumnya menjadi program Python. Dapat dilihat bahwa jika operan bernilai True, hasilnya False dan sebaliknya.
+
+Operator Assignment
+Operator selanjutnya adalah assignment. Operator ini bertujuan untuk melakukan proses assignment atau pemberian nilai pada suatu variabel dengan nilai tetap. Perhatikan tabel di bawah ini untuk memahami contoh penerapan operator assignment. Asumsikan x bernilai 11 dan y bernilai 5.
+
+Operator	Deskripsi	Contoh
++=
+
+Menyederhanakan operasi x = x + y.
+
+x += y, menghasilkan nilai 16.
+
+-=
+
+Menyederhanakan operasi x = x - y.
+
+x -= y, menghasilkan nilai 6.
+
+*=
+
+Menyederhanakan operasi x = x * y.
+
+x *= y, menghasilkan nilai 55.
+
+/=
+
+Menyederhanakan operasi x = x / y.
+
+x /= y, menghasilkan nilai 2.2.
+
+%= 
+
+Menyederhanakan operasi x = x % y.
+
+x %= y, menghasilkan nilai 1.
+
+Sederhananya, seluruh operator di atas setara dengan x = x <operator> y. Biasanya, Anda akan sering menjumpai operator assignment ini pada perulangan (Anda akan mempelajarinya nanti). Perulangan pada pemrograman berarti Anda membuat sebuah program yang akan terus berulang hingga berakhir karena suatu kondisi. Salah satu caranya agar dapat terus berulang adalah dengan menambahkan operator assignment. 
+
+Mari lihat penerapannya pada Python.
+
+main.py
+1
+# +=
+2
+x = 11
+3
+x += 5
+4
+print(x)
+5
+​
+6
+# -=
+7
+x = 11
+8
+x -= 5
+9
+print(x)
+10
+​
+11
+# *=
+12
+x = 11
+13
+x *= 5
+14
+print(x)
+15
+​
+16
+# /=
+17
+x = 11
+18
+x /= 5
+19
+print(x)
+20
+​         
+Dalam kode di atas, Anda menerapkan seluruh contoh yang ada pada tabel sebelumnya menjadi program Python. Masih bingung? Mari lihat salah satu kode di atas dan bedah lebih dalam.
+
+main.py
+1
+x = 11
+2
+x += 5
+3
+print(x)
+4
+​
+5
+​
+6
+x = 11
+7
+x = x + 5
+8
+print(x)
+9
+​
+10
+"""
+11
+Output:
+12
+16
+13
+16
+14
+"""
+         
+Kode "x += 5" setara dengan "x = x + 5". Asumsikan x bernilai 11, hasil yang didapat dari kedua kode di atas adalah 16. Seolah-olah Anda melakukan operasi seperti berikut: "x = 11 + 5"
+
+

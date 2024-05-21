@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Macam-Macam Input</title>
+  </head>
+  <body>
+    <!-- jenis-jenis input -->
+    <div>
+      <label for="Text">Text</label>
+      <br />
+      <input
+        type="text"
+        id="text"
+        placeholder="ini akan berisikan text"
+        required
+      />
+    </div>
+    <div>
+      <label for="Number">Number</label>
+      <br />
+      <input type="number" id="number" placeholder="123456789 - end" required />
+    </div>
+    <div>
+      <label for="Password">Password</label>
+      <br />
+      <input type="password" id="password" placeholder="*******" required />
+    </div>
+    <div>
+      <label for="Email">Email</label>
+      <br />
+      <input type="email" id="email" placeholder="example@mail.com" required />
+    </div>
+    <div>
+      <label for="Search">Search</label>
+      <br />
+      <input type="search" id="search" placeholder="Search in here" required />
+    </div>
+    <div>
+      <label for="Submit">Submit</label>
+      <br />
+      <input type="submit" />
+    </div>
+    <div>
+      <label for="Date">Date</label>
+      <br />
+      <input type="date" />
+    </div>
+    <div>
+      <label for="Time">Time</label>
+      <br />
+      <input type="time" />
+    </div>
+    <div>
+      <label for="Date Time">Date Time</label>
+      <br />
+      <input type="datetime" />
+    </div>
+    <div>
+      <label for="Checkbox">Checkbox</label>
+      <br />
+      <input type="checkbox" /><input type="checkbox" /><input
+        type="checkbox"
+      />
+    </div>
+    <div>
+      <label for="Radio">Radio</label>
+      <br />
+      <input type="radio" /><input type="radio" /><input type="radio" />
+    </div>
+    <div>
+      <label for="Color">Color</label>
+      <br />
+      <input type="color" />
+    </div>
+    <div>
+      <label for="File">File</label>
+      <br />
+      <input type="file" />
+    </div>
+    <div>
+      <label for="Hidden">Hidden</label>
+      <br />
+      <input type="hidden" />
+    </div>
+    <div>
+      <label for="Text Area">Text Area</label>
+      <br />
+      <textarea cols="6" rows="6">
+        ini adalah Komentar yang akan ditampilkan di website
+        dengan menggunakan atribut textarea
+      </textarea>
+    </div>
+    <div>
+      <label for="url">url</label>
+      <br />
+      <input
+        type="url"
+        name="link"
+        id="url"
+        placeholder="ini berisi link"
+        required
+      />
+    </div>
+    <div>
+      <label for="tel">tel</label>
+      <br />
+      <input
+        type="tel"
+        name="tel"
+        id="tel"
+        placeholder="ini berisi nomor telepon"
+        required
+      />
+    </div>
+    <!-- form -->
+    <form>
+      <div>
+        <label for="email">Email</label>
+        <br />
+        <input type="email" id="email" />
+      </div>
+
+      <div>
+        <label for="password">Password</label>
+        <br />
+        <input type="password" id="password" />
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+    <!-- Pesan kamar -->
+    <form>
+      <div>
+        <label for="fullName">Nama</label>
+        <input id="fullName" name="fullName" required />
+      </div>
+
+      <div>
+        <label for="checkIn">Tanggal Check-In</label>
+        <input type="date" id="checkIn" name="checkIn" required />
+      </div>
+
+      <div>
+        <label for="checkOut">Tanggal Check-Out</label>
+        <input type="date" id="checkOut" name="checkOut" required />
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

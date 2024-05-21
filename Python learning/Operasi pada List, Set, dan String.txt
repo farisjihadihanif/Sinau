@@ -1,0 +1,6 @@
+Operasi pada List, Set, dan String
+
+Dalam modul ini, Anda akan belajar mengenai contoh-contoh operasi pada list, set ,dan string. Banyak fungsi dalam Python yang dapat digunakan untuk melakukan operasi pada list, set, dan string.
+.
+len()
+Fungsi len() bertujuan untuk menghitung panjang atau banyaknya elemen dari list, set, dan string. Khusus pada string, program akan menghitung jumlah karakternya.
